@@ -46,13 +46,25 @@ const questions = [
 ];
 
 // function to write README file
+//use node.fs based on tutorials and activity 14
 function writeToFile(fileName, data) {
-
+    fs.writeToFile(fileName, data, (err) => {
+        if (err) {
+            throw err;
+        }
+        console.log("ReadMe Complete");
+    });
 }
 
 // function to initialize program
+// Use inquirer and prompts
 function init() {
+    inquirer.prompt(questions).then(answers) => {
+        const response = generateMarkdown(answers);
+        console.log(answers);
 
+        writeToFile("README.md", response);
+    }
 }
 
 // function call to initialize program
