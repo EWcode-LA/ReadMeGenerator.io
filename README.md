@@ -19,8 +19,8 @@ Create a README file by using a command-line application to dynamiically generat
 
   ## Author Contact
   Contact the author with any questions!<br>
-  Github link: [imbingz](https://https://github.com/EWcode-LA)<br>
-  Email: contact.bingz@gmail.com
+  Github link: [EWcode_LA](https://https://github.com/EWcode-LA)<br>
+  Email: seth.miller87@protonmail.com
 
   ## License
   This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.<br />
