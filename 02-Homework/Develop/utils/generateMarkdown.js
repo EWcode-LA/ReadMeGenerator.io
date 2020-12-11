@@ -6,7 +6,17 @@ function generateMarkdown(data) {
 
   # ${data.Description}
 
+  # ${data.Installation}
+
+  # ${data.Usage}
+
   # ${data.License}
+
+  # ${data.Contribution}
+
+  # ${data.Tests}
+
+  # ${data.Questions}
 
   # ${data.Github}
 

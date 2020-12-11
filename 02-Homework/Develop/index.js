@@ -20,13 +20,38 @@ const questions = [
        },
        {
         type: "input",
-           message: "What is the description of your description, installation instructions, usage information, contribution guidelines, and test instructions?",
+           message: "Enter your description",
            name: "Description"   
+       }, 
+       {
+        type: "input",
+           message: "Enter Installation",
+           name: "Installation"   
+       }, 
+       {
+        type: "input",
+           message: "Enter Usage",
+           name: "Usage"   
        }, 
        {
         type: "input",
            message: "Enter License for your project",
            name: "License"   
+       }, 
+       {
+        type: "input",
+           message: "Enter Contributing",
+           name: "Contributions"   
+       }, 
+       {
+        type: "input",
+           message: "Enter your tests",
+           name: "Tests"   
+       }, 
+       {
+        type: "input",
+           message: "Enter Questions",
+           name: "Questions"   
        }, 
        {
         type: "input",
@@ -36,7 +61,7 @@ const questions = [
        {
         type: "input",
            message: "Enter your E-mail address",
-           name: "E-mail"   
+           name: "Email"   
        }, 
     //    {
     //     type: "input",
@@ -48,9 +73,9 @@ const questions = [
 // function to write README file
 //use node.fs based on tutorials and activity 14
 function writeToFile(fileName, data) {
-    fs.writeToFile(fileName, data, (err) => {
+    fs.writeToFile(fileName, data, function(err) {
         if (err) {
-            throw err;
+            return console.log(err);
         }
         console.log("ReadMe Complete");
     });
@@ -59,11 +84,8 @@ function writeToFile(fileName, data) {
 // function to initialize program
 // Use inquirer and prompts
 function init() {
-    inquirer.prompt(questions).then((answers) => {
-        const response = generateMarkdown(answers);
-        console.log(answers);
-
-        writeToFile("README.md", response);
+    inquirer.prompt(questions).then(function(data) {
+        writeToFile("README.md", generateMarkdown(data));
     })
 }
 
