@@ -13,7 +13,7 @@ ${data.Installation}
 #### Usage
 ${data.Usage}
 
-### License
+#### License
 ${data.License}
 
 #### Contribution

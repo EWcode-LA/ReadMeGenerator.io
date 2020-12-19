@@ -1,9 +1,9 @@
 
   
-# ReadMe Generator
+# README.md Generator
 
 #### Description
-Dynamic command-line application that will generate a professional READMA.md file based on the users input.
+Dynamic command-line application that will generate a professional README.md file based on the users input.
 
 #### Installation
 [Inquirer package](https://www.npmjs.com/package/inquirer)
@@ -15,10 +15,10 @@ npm install, node.js, inside of Develop folder located inside of 02-Homework wit
 [MIT](https://choosealicense.com/licenses/mit/)
 
 #### Contribution
-undefined
+N/A
 
 #### Test
-N/
+N/A
 
 #### Questions
 N/A
