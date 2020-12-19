@@ -30,6 +30,11 @@ const questions = [
        }, 
        {
         type: "input",
+           message: "Enter Demo Link",
+           name: "Demo"   
+       }, 
+       {
+        type: "input",
            message: "Enter Usage",
            name: "Usage"   
        }, 

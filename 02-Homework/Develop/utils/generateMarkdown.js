@@ -10,6 +10,9 @@ ${data.Description}
 #### Installation
 ${data.Installation}
 
+## Demo
+${data.Demo}
+
 #### Usage
 ${data.Usage}
 
