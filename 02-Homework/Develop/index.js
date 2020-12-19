@@ -41,7 +41,7 @@ const questions = [
        {
         type: "input",
            message: "Enter Contributing",
-           name: "Contributions"   
+           name: "Contribution"   
        }, 
        {
         type: "input",
@@ -64,7 +64,7 @@ const questions = [
            name: "Email"   
        }, 
     //    {
-    //     type: "input",
+    //     type: "input",number, confirm, list
     //        message: "What is the title of your project?",
     //        name: "Title"   
     //    }, 
@@ -73,7 +73,7 @@ const questions = [
 // function to write README file
 //use node.fs based on tutorials and activity 14
 function writeToFile(fileName, data) {
-    fs.writeToFile(fileName, data, function(err) {
+    fs.writeFile(fileName, data, function(err) {
         if (err) {
             return console.log(err);
         }
